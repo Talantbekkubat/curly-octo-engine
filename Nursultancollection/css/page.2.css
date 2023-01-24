@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;    /*эки четинен отступ берет .баардыгы бирдей уровеньде башталат.  ортого жылдырып*/
+}
+a {
+    text-decoration: none; /* ссылычный тексттин астындагы чызыкты жок кылат */
+}
+
+.header img{
+    width: 120px;
+    height: 120px;
+    margin-left: -250px;
+    border-radius: 50%;
+
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.header a {
+    font-weight: 300;
+    font-size: 16px;
+    margin: 11px;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.4s;
+    padding-bottom: 100px;
+}
+.header a:hover{
+    transform: scale(1.1);
+    color: #40b740;
+}
+.hero img{
+    width: 450px;
+    height: 420px;
+}
+/*.hero h1{*/
+/*    padding-bottom: 40px;*/
+/*    font-size: 44px;*/
+/*}*/
+#hero{
+    background: #0B2E27;
+    height: 650px;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+}
+.hero h1{
+    font-family: 'Nunito Sans',sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    color: #FFCCBC;
+    /*padding-top: 35px;*/
+    padding-bottom: 20px;
+    text-align: center;
+}
+.hero p{
+    font-family: 'Nunito Sans',sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    color: #FFCCBC;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.hero button{
+    width: 290px;
+    height: 60px;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    margin-left: 190px;
+    border: 2px solid #FFFFFF;
+    transition: 0.4s;
+    font-weight: 700;
+}
+.hero button:hover{
+    transform: scale(1.1);
+    background: #FFCCBC;
+    color:#0B4141 ;
+}
+.liniaa{
+    color: black;
+    border: 1px solid black;
+    margin-bottom: 50px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-disp  {
+    display: flex;
+}
+.footer-disp a{
+    margin: 15px;
+    text-align: center;
+    padding-bottom: 50px;
+}

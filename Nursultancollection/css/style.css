@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;    /*эки четинен отступ берет .баардыгы бирдей уровеньде башталат.  ортого жылдырып*/
+}
+a {
+    text-decoration: none; /* ссылычный тексттин астындагы чызыкты жок кылат */
+}
+
+.header img{
+    width: 120px;
+    height: 120px;
+    margin-left: -250px;
+    border-radius: 50%;
+
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.header a {
+    font-weight: 300;
+    font-size: 16px;
+    margin: 11px;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.4s;
+    padding-bottom: 100px;
+}
+.header a:hover{
+    transform: scale(1.1);
+    color: #40b740;
+}
+#hero{
+    background: url("../img/noch.jpg") no-repeat center/cover;
+    min-height: 80vh;
+    height: 400px;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -205px;
+    margin-left: 10px;
+}
+.hero-img img{
+    width: 350px;
+    height: 380px;
+    /*position: fixed;*/
+    padding-top: 150px;
+}
+.hero h1{
+    font-size: 67px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    margin-left: 1px;
+    text-transform: uppercase;
+    margin-top: -82px;
+}
+.hero p{
+    color: rgba(21, 19, 19, 0.82);
+    font-weight: 700;
+    margin-left: -60px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+.hero{
+    animation: aini 1s alternate; /*альтернейт деген код . анимация бир жолу иштеш учун */
+}
+@keyframes aini {
+    0%{
+        transform: translateX(-700px); /* анимация жанынан болуу учун {X} колдонобуз*/
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.hero-img img{
+    animation: img 1s alternate;  /*альтернейт деген код . анимация бир жолу иштеш учун */
+}
+@keyframes img {
+    0%{
+        transform: translateX(700px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.hero button{
+    font-weight: 600;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 13px;
+    border: 2px solid #000000;/* сыртындагы светти алып салдык. квадраттын чиймелерини десек болот*/
+    color: black;
+    transition: .4s;  /*кнопка чонойчу время*/
+    margin-left: -127px;
+}
+.hero button:hover{
+    transform: scale(1.1); /*мышканы апарганда кнопка чонойот*/
+}
+
+.title img{
+    padding-top: 70px;
+    width: 220px;
+    height: 220px;
+    padding-bottom: 15px;
+    border-radius: 50% 10%;
+}
+.title h1{
+    font-size: 27px;
+    color: rgba(0, 0, 0, 0.34);
+    text-transform: uppercase;
+    padding-bottom: 13px;
+    margin-left: 35px;
+}
+.title a{
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 100px;
+    margin-right: 120px;
+    margin-left: 65px;
+    transition: .4s;
+}
+.title a:hover{
+    color: red;
+}
+.title a span{
+    margin-left: 70px;
+}
+.line {
+
+    margin-top: 3px;
+    text-align: center;
+    width: 200px;
+    background: black;
+    border: 2px solid #865a5a;
+
+}
+.hero-block-t{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-block-t2{
+    display: flex;
+    padding-bottom: 100px;
+}
+.pb {
+    padding-bottom: 100px;
+}
+.fixced img{
+    width: 400px;
+    height: 450px;
+}
+.fixced{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fixced-block h1{
+    font-family: 'Nunito Sans',sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 68px;
+    color: #8a4b37;
+    padding-top: 85px;
+    padding-bottom: 20px;
+    text-align: start;
+    margin-left: 130px;
+}
+.fixced-block p{
+    font-family: 'Nunito Sans',sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    color: #8f2e2e;
+    text-align: start;
+    padding-bottom: 40px;
+    margin-left: 130px;
+
+}
+.fixced-block button{
+    width: 290px;
+    height: 60px;
+    border-radius: 20px;
+    background: transparent;
+    color: #0c0a0a;
+    border: 2px solid #be3d3d;
+    transition: 0.4s;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 130px;
+    margin-bottom: 150px;
+
+}
+.fixced-block button:hover{
+    transform: scale(1.1);
+    background: #FFCCBC;
+    color:#0B4141 ;
+
+}
+.liniaa{
+    color: black;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-disp  {
+    display: flex;
+}
+.footer-disp a{
+    margin: 15px;
+    text-align: center;
+    padding-bottom: 50px;
+}
